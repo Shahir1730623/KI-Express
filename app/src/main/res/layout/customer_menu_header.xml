@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/menu_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/app_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/fullNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_logo"
+        android:text="Send Parcel"
+        android:fontFamily="@font/muli_black"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullNameLabel"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Send your parcels to any destination"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/emailLabel"
+        android:layout_marginTop="10dp"
+        android:background="#c0c0c0" />
+
+</RelativeLayout>

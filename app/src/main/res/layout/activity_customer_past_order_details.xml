@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.Customer.PastOrdersDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Order Information"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginVertical="10dp"
+            android:background="#c0c0c0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Receiver Name"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/receiverNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Abdul Reza"
+            android:textColor="#9C000000"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiverNameTxt"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Receiver Phone Number"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/receiverPhoneTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="01715799289"
+            android:textColor="#9C000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiverPhoneTxt"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/placeholder1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-5dp"
+            android:layout_below="@+id/imageView1"
+            android:src="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/placeholder2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/senderAddressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:fontFamily="sans-serif"
+            android:text="Road-11,House-281,Flat-B2,Gulshan-1,Dhaka-1212"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/receiverAddressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Road-11,House-281,Flat-B2,Gulshan-1,Dhaka-1212"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/receiverAddressTxt"
+            android:layout_marginTop="20dp"
+            android:background="#c0c0c0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/courierServiceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiverAddressTxt"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Courier Service: DHL"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/totalWeightTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courierServiceTxt"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Total weight: 30 kg"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ratingHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/totalWeightTxt"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_black"
+            android:text="Please Rate Your Order"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingHeader"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

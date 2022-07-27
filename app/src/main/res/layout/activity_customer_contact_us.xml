@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.Customer.ContactUs"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/support"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/muli"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:text="Contact\nSupport"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/muli"
+        android:gravity="center"
+        android:text="You can contact support team in any of the following ways"
+        android:textColor="#8F000000"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relative_layout_shape"
+            android:paddingVertical="15dp"
+            android:backgroundTint="#86E4E4E4"
+            android:onClick="callUs">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/phone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/relative_layout_shape"
+            android:layout_marginHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:backgroundTint="#86E4E4E4"
+            android:onClick="emailUs">
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/email_big" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/relative_layout_shape"
+            android:paddingVertical="15dp"
+            android:backgroundTint="#86E4E4E4"
+            android:onClick="findUsOnFacebook">
+
+            <ImageView
+                android:id="@+id/logo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/facebook" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

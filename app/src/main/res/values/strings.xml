@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">KI Express</string>
+    <!-- General Strings -->
+
+    <!-- Login -->
+    <string name="Login">Login</string>
+
+    <!-- Register -->
+    <string name="Register">Register\nNow</string>
+
+    <!-- Startup -->
+    <string name="startup_heading">Send\n Any Package</string>
+    <string name="startup_tagline">We will deliver your package to any corner of the world</string>
+
+    <!-- OTP -->
+    <string name="forget_password">Forget Password</string>
+    <string name="otp_heading">OTP\nCode</string>
+    <string name="otp_title">Verification</string>
+    <string name="otp_description">Enter one time password sent to</string>
+    <string name="otp_PhoneNumber">+8801312236805</string>
+
+    <!-- Forget Password && Make Selection -->
+    <string name="reset_password">Reset Password</string>
+    <string name="forget_password_detail">Please provide the account for which you want to reset password</string>
+    <string name="make_selection_heading">Select\nAny</string>
+    <string name="make_selection_detail">Select in which contact detail should we send the OTP</string>
+
+    <!-- Set Password -->
+    <string name="set_password_heading">Set\nPassword</string>
+    <string name="set_password_description">Your identity has been verified\nEnter your new password</string>
+
+    <!-- FAQ -->
+    <string name="FAQ_1">How to place parcel Sending Request</string>
+    <string name="FAQ_1_details">1. Click the "Request Parcel Pickup ?" option from homepage.\n\n
+                                 2. Fill up the following form of from the page\n\n
+                                 3. Click the "Send Pickup" option to confirm the request.\n</string>
+
+    <string name="FAQ_2">Shipping Charge Estimation</string>
+    <string name="FAQ_2_details">The shipping charge will vary depending on item type and weight</string>
+
+    <string name="FAQ_3">What is the delivery charge to ship the product to the warehouse?</string>
+    <string name="FAQ_3_details">There is no delivery charge of shipping the product to the warehouse</string>
+
+    <string name="FAQ_4">Can I avail the service without internet?</string>
+    <string name="FAQ_4_details">No, the parcel shipping request will only be sent when you are online.</string>
+
+    <string name="FAQ_5">Do you have any Emergency/ Helpline contact number?</string>
+    <string name="FAQ_5_details">The Helpline and contact numbers are in our Contact Us Page. You may even reach us via email.</string>
+
+
+</resources>

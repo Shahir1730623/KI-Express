@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginSignUp.Login"
+    android:transitionName="login_transition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/back"
+            app:tint="@color/colorSecondary"
+            android:onClick="backToStartUpScreen"/>
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/app_name" />
+
+        <TextView
+            android:id="@+id/logo_welcomeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/muli_black"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorPrimary"
+            android:text="Welcome back"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/logo_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondary"
+            android:text="Login to Continue"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:textColorHint="#37d6ba"
+                app:boxStrokeColor="#36f181"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="#37d6ba"
+                app:startIconDrawable="@drawable/email"
+                app:startIconTint="#37beef">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextField"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTextField"
+                android:hint="Password"
+                android:textColorHint="#37d6ba"
+                app:boxStrokeColor="#36f181"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="#37d6ba"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#37beef"
+                app:startIconDrawable="@drawable/password_icon"
+                app:startIconTint="#37beef">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/forgetPasswordBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordTextField"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="-17dp"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:onClick="forgetPassword"
+                android:text="Forget Password?"
+                android:textColor="#37beef" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgetPasswordBtn"
+                android:background="@drawable/btn_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="5dp"
+                android:onClick="loginBtnOnClick"
+                android:text="Log In"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/callRegisterPageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginBtn"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:onClick="goToRegisterPage"
+                android:text="New User? Register"
+                android:textColor="#37beef" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/black"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
